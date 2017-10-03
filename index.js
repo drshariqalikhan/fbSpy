@@ -8,13 +8,13 @@ app.use(bp.urlencoded({extended: true}));
 //handle post req
 
 app.post('/user',function(req,res){
-	var responseText = req.body.gender;
-	var fn=req.body['first name'];
+	var responseText = req.body;
+	//var fn=req.body['first name'];
 	//display response
   res.json({
  "messages": [
    {"text": responseText },
-   {"text": fn },
+   {"text": ""},
 	   
  ]
 });
