@@ -12,7 +12,7 @@ const app = ex();
 app.use(bp.urlencoded({extended: true}));
 
 app.post('/user',function(req,res){
-firstname=req.body['first name'];
+firstname=req.body.gender;
 	
 //display response
   response.json({
