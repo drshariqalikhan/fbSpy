@@ -15,11 +15,14 @@ app.post('/user',function(req,res){
 firstname=req.body.gender;
 	
 //display response
-  response.json({
+  app.post('/user',function(req,res){
+var responseText = req.body.gender;
+//display response
+  res.json({
  "messages": [
-   {"text": firstname },
-   {"text": "--" },
+   {"text": responseText },
+   {"text": "" },
 	   
  ]
-});	
+});
 });
