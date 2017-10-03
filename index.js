@@ -8,13 +8,19 @@ app.use(bp.urlencoded({extended: true}));
 //handle post req
 
 app.post('/user',function(req,res){
-	var responseText = req.body;
-	//var fn=req.body['first name'];
-	//display response
+var firstName= req.body["first name"];
+var lastName= req.body["last name"];
+var profilePic= req.body["profile pic url"];
+var locale=req.body["locale"];
+var timezone= req.body["timezone"];
+var gender= req.body["gender"];
+var messengerSessionId= req.body["chatfuel user id"];
+var facebookPageId= req.body["messenger user id"];
+//display response
   res.json({
  "messages": [
-   {"text": responseText },
-   {"text": ""},
+   {"text": firstName },{"text": lastName },
+   {"text": locale},
 	   
  ]
 });
