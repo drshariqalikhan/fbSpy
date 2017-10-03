@@ -10,9 +10,6 @@ var fbid;
 //configure imports
 const app = ex();
 app.use(bp.urlencoded({extended: true}));
-
-app.post('/user',function(req,res){
-firstname=req.body.gender;
 	
 //display response
   app.post('/user',function(req,res){
