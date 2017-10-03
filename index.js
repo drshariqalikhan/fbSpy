@@ -9,11 +9,12 @@ app.use(bp.urlencoded({extended: true}));
 
 app.post('/user',function(req,res){
 	var responseText = req.body.gender;
+	var fn=req.body['first name'];
 	//display response
   res.json({
  "messages": [
    {"text": responseText },
-   {"text": "" },
+   {"text": fn },
 	   
  ]
 });
